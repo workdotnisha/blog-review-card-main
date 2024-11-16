@@ -68,3 +68,28 @@ body{
     font-weight: 800;
     cursor: pointer;
 }
+
+@media screen and (max-width: 448px){
+    body{
+        position: relative;
+    }
+    .container{
+        position: absolute;
+        width: 250px;
+        height: 500px;
+        background-color: #fff;
+        margin: 7.5rem auto;
+        border: 1px solid #000;
+        border-radius: 20px;
+        padding: 1.5rem;
+    }
+    .container2{
+        position: absolute;
+        width: 250px;
+    height: 500px;
+    background-color: #000000;
+    margin: 8rem 10px;
+    border-radius: 6%;
+    padding: 1.5rem;
+    }
+}

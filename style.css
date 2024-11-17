@@ -2,21 +2,44 @@
 body{
     background-color: #F5D04E;
     font-family: "Figtree", sans-serif;
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
+.frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+.center {
+    position: relative;
+      
+  }
 .container{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.container2{
+    position: relative;
     width: 320px;
     height: 500px;
     background-color: #fff;
-    margin: -43.3% 37.7%;
     border: 1px solid #000;
     border-radius: 20px;
     padding: 1.5rem;
 }
-.container2{
+.container1{
+    position: absolute;
+    top: 10px; 
+    left: 10px;
     width: 320px;
     height: 500px;
     background-color: #000000;
-    margin: 8rem auto;
     border-radius: 6%;
     padding: 1.5rem;
 }
@@ -69,27 +92,17 @@ body{
     cursor: pointer;
 }
 
-@media screen and (max-width: 448px){
-    body{
-        position: relative;
-    }
-    .container{
-        position: absolute;
+@media screen and (max-width: 950px){
+    .container2{
         width: 250px;
         height: 500px;
-        background-color: #fff;
-        margin: 7.5rem auto;
-        border: 1px solid #000;
-        border-radius: 20px;
-        padding: 1.5rem;
     }
-    .container2{
-        position: absolute;
+    .container1{
         width: 250px;
-    height: 500px;
-    background-color: #000000;
-    margin: 8rem 10px;
-    border-radius: 6%;
-    padding: 1.5rem;
+        height: 500px;
+    }
+    .frame{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
     }
 }

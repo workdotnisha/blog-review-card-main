@@ -67,7 +67,7 @@ body{
 }
 .card__title{
     font-weight: 900;
-    font-size: 22px;
+    font-size: 22px !important;
 }
 .card__description{
     font-size: 1.1rem;
